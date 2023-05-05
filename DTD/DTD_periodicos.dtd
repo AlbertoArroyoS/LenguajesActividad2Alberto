@@ -2,7 +2,7 @@
 <!ELEMENT periodico (seccion+, indice, contenido)>
 
 <!ATTLIST periodico id ID #REQUIRED>
-<!ATTLIST periodico tipo_clase (novela | infantil | didáctico) #REQUIRED>
+<!ATTLIST periodico tipo_clase (nacional | internacional) #REQUIRED>
 <!ATTLIST periodico fecha_publicación CDATA #REQUIRED>
 
 <!ELEMENT seccion (articulo+)>
@@ -17,4 +17,3 @@
 
 
 <!-- <!ENTITY entity name SYSTEM "URI/URL"> -->
-
