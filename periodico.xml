@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE libros SYSTEM "DTD_periodicos.dtd">
+<!DOCTYPE periodicos SYSTEM "DTD_periodicos.dtd">
 <periodicos>
     <periodico id="R1234" tipo_clase="nacionales o internacionales" fecha_publicación="">
         <seccion tipo_sección="económica, opinión, deportes, nacional o internacional">

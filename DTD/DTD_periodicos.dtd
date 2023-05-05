@@ -1,20 +1,38 @@
-<!ELEMENT periodicos (periodico+)>
-<!ELEMENT periodico (id,tipo_clase,fecha_publicación)>
+<!ELEMENT periodicos (periodico*)>
+<!ELEMENT periodico (seccion+, indice, contenido)>
 
-<!-- Definimos los atributos del libro -->
 <!ATTLIST periodico id ID #REQUIRED>
 <!ATTLIST periodico tipo_clase (novela | infantil | didáctico) #REQUIRED>
 <!ATTLIST periodico fecha_publicación CDATA #REQUIRED>
 
-<!ELEMENT seccion (#PCDATA)>
-<!ATTLIST seccion tipo_seccion CDATA >
+<!ELEMENT seccion (articulo+)>
+<!ATTLIST seccion tipo_seccion (economica | opinion | deportes | nacional | internacional) #REQUIRED>
 
-<!ELEMENT articulo (autor)>
-<!ATTLIST articulo autor CDATA >
+<!ELEMENT articulo (#PCDATA)>
+<!ATTLIST articulo autor CDATA #IMPLIED>
 
 <!ELEMENT indice (#PCDATA)>
-<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT contenido EMPTY>
 <!ATTLIST contenido enlace CDATA #REQUIRED>
 
 
 <!-- <!ENTITY entity name SYSTEM "URI/URL"> -->
+
+<!DOCTYPE periodicos [
+<!ELEMENT periodicos (periodico+)>
+<!ELEMENT periodico (seccion+, indice, contenido)>
+<!ATTLIST periodico 
+          Id ID #REQUIRED 
+          tipo_clase CDATA #REQUIRED 
+          fecha_pub CDATA #REQUIRED>
+<!ELEMENT seccion (articulo+)>
+<!ATTLIST seccion 
+          tipo_seccion CDATA #REQUIRED>
+<!ELEMENT articulo (#PCDATA)>
+<!ATTLIST articulo 
+          autor CDATA #IMPLIED>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT contenido EMPTY>
+<!ATTLIST contenido 
+          enlace CDATA #REQUIRED>
+]>
