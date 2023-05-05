@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Este ejemplo es muy parecido a la validación de la Pelicula por DTD. Se ha quitado alguna
+validación complicadas para hacer el ejemplo lo más sencillo posible-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>
+            Esquema que marca la estructura de un libro de la libreria "Tony's Library"
+        </xs:documentation>
+    </xs:annotation>
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"></xs:element>
+                <xs:element name="capitulo"></xs:element>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo_capitulo" type="xs:string"></xs:element>
+                            <xs:element name="contenido"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                <xs:element name="titulo"></xs:element>
+                <xs:element name="titulo"></xs:element>
+            
+            
+            </xs:sequence>     
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
