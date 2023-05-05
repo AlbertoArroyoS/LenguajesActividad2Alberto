@@ -3,13 +3,13 @@
     xsi:noNamespaceSchemaLocation= "XSD/XSD_libros.xsd">
     <titulo>Programación orientada a objetos con Java</titulo>
     <capitulo paginas="10">
-        <titulo_capitulo>Introducción a la programación orientada a objetos</titulo_capitulo>
-        <contenido>En este capítulo se presenta el paradigma de programación orientada a objetos y se introducen los conceptos básicos necesarios para entender su funcionamiento.</contenido>
+        <titulo_capitulo>Introducción XSD</titulo_capitulo>
+        <contenido>En este capítulo se la validacion XSD.</contenido>
     </capitulo>
     <capitulo paginas="20">
-        <titulo_capitulo>Clases y objetos en Java</titulo_capitulo>
-        <contenido>En este capítulo se explica cómo definir clases y objetos en Java, y cómo crear instancias de objetos.</contenido>
+        <titulo_capitulo>Restricciones XSD</titulo_capitulo>
+        <contenido> Aprender a hacer restricciones en XSD</contenido>
     </capitulo>
     <indice>Índice</indice>
-    <sinopsis>Este libro es una introducción a la programación orientada a objetos con Java, dirigido a estudiantes y desarrolladores principiantes.</sinopsis>
+    <sinopsis>Este libro es una introducción a XSD para desarrolladores principiantes.</sinopsis>
 </libro>

@@ -29,6 +29,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
+            <!-- Restriccion de tipo de libro -->
             <xs:attribute name="tipo_clase" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
