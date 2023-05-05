@@ -1,41 +1,39 @@
 <?xml version="1.0"?>
-<!-- Este ejemplo es muy parecido a la validación de la Pelicula por DTD. Se ha quitado alguna
-validación complicadas para hacer el ejemplo lo más sencillo posible-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:annotation>
         <xs:documentation>
             Esquema que marca la estructura de un libro
         </xs:documentation>
     </xs:annotation>
-    <xs:element name="libro">
+    <xs:element name="libros">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="titulo" type="xs:string"></xs:element>
-                <xs:element name="capitulo">
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="capitulos" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
-                        <simpleContent>
-                            <extension base="string">
-                                <attribute name="pagina"></attribute>
-                            </extension>
-                        </simpleContent>
                         <xs:sequence>
-                            <xs:element name="titulo_capitulo" type="xs:string"></xs:element>
-                            <xs:element name="contenido"></xs:element>
+                            <xs:element name="titulo_capitulo" type="xs:string"/>
+                            <xs:element name="contenido" type="xs:string"/>
                         </xs:sequence>
+                        <xs:attribute name="pagina" type="xs:string" use="required"/>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="indice" type="xs:string"></xs:element>
-                <xs:element name="sinopsis" type="xs:string"></xs:element>
+                <xs:element name="indice" type="xs:string"/>
+                <xs:element name="sinopsis" type="xs:string"/>
             </xs:sequence>
-        <!-- Podemos hacer los atributos obligatorios -->        
-            <!-- Podemos hacer los atributos obligatorios -->
-            <attribute name="id" type="string" use="required"></attribute>  
-            <attribute name="tipo_clase" type="integer" use="required"></attribute>  
-            <attribute name="paginas" type="integer" use="required"></attribute>  
-
-        
-        
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="tipo_clase" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="informática"/>
+                        <xs:enumeration value="corazón"/>
+                        <xs:enumeration value="coches"/>
+                        <xs:enumeration value="investigación"/>
+                        <xs:enumeration value="otras"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="paginas" type="xs:integer" use="required"/>
         </xs:complexType>
     </xs:element>
-
 </xs:schema>
