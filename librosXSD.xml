@@ -1,5 +1,5 @@
 
-<libro id="001" tipo_clase="didáctico" paginas="250" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<libro id="L0001" tipo_clase="didáctico" paginas="250" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation= "XSD/XSD_libros.xsd">
     <titulo>Programación orientada a objetos con Java</titulo>
     <capitulo paginas="10">
