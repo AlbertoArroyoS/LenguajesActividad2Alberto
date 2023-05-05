@@ -9,11 +9,17 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="titulo" type="xs:string"/>
-                <xs:element name="capitulo" minOccurs="0" maxOccurs="unbounded">
+                 <!-- varios capítulos con el título en su interior-->
+                <xs:element name="capitulo" minOccurs="1" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo_capitulo" type="xs:string"/>
-                            <xs:element name="contenido" type="xs:string"/>
+                            <xs:element name="contenido">
+                                <!--contenido, en el que se tiene un atributo con el enlace a la información -->
+                                <xs:complexType>
+                                    <xs:attribute name="enlace" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                         <xs:attribute name="paginas" type="xs:string" use="required"/>
                     </xs:complexType>
