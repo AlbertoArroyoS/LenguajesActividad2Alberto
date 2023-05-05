@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "DTD_periodicos.dtd">
 <periodicos>
     <periodico id="R1234" tipo_clase="nacionales o internacionales" fecha_publicación="">
         <seccion tipo_sección="económica, opinión, deportes, nacional o internacional">
-            <artículo autor=""></artículo>
+            <articulo autor=""></articulo>
         </seccion>
-        <índice></índice>
+        <indice></indice>
         <contenido enlace="enlace a la información"></contenido>
     </periodico>
 </periodicos>

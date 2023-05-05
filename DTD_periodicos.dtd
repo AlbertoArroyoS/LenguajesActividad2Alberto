@@ -1,0 +1,20 @@
+<!ELEMENT periodicos (periodico+)>
+<!ELEMENT periodico (id,tipo_clase,fecha_publicación)>
+
+<!-- Definimos los atributos del libro -->
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST periodico tipo_clase (novela | infantil | didáctico) #REQUIRED>
+<!ATTLIST periodico fecha_publicación CDATA #REQUIRED>
+
+<!ELEMENT seccion (#PCDATA)>
+<!ATTLIST seccion tipo_seccion CDATA >
+
+<!ELEMENT articulo (autor)>
+<!ATTLIST articulo autor CDATA >
+
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido enlace CDATA #REQUIRED>
+
+
+<!-- <!ENTITY entity name SYSTEM "URI/URL"> -->
