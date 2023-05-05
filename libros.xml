@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE libros SYSTEM "DTD_libro.dtd">
+<!DOCTYPE libros SYSTEM "DTD_libros.dtd">
  <!--  Libros    -->
 <libros>
     <libro id="L1234" tipo_clase="didáctico" paginas="150">

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<revista id="P1234" tipo_clase="informática, corazón, coches, investigación y otras" páginas="">
-    <título></título>
-    <número ></número>
-    <índice></índice>
-    <seccion páginas="">
-        <contenido enlace="enlace a la información"></contenido>
-    </seccion>
-</revista>
