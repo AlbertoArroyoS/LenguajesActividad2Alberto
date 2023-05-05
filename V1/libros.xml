@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro SYSTEM "./DTD/DTD_libros.dtd">
+ <!--  Libros    -->
+<libro id="L1234" tipo_clase="didáctico" paginas="150">
+    <titulo></titulo>
+    <capitulo c_paginas="20">
+        <titulo_capitulo> </titulo_capitulo>
+        <contenido enlace="enlace a la información"></contenido>
+    </capitulo>
+    <indice></indice>
+    <sinopsis></sinopsis>
+</libro>

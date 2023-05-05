@@ -1,0 +1,18 @@
+<!ELEMENT revistas (revista+)>
+<!ELEMENT revista (id,tipo_clase,paginas)>
+
+<!-- Definimos los atributos del libro -->
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista tipo_clase (novela | infantil | didáctico) #REQUIRED>
+<!ATTLIST revista paginas CDATA #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+
+<!ELEMENT seccion (s_paginas)>
+<!ATTLIST seccion s_paginas CDATA >
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido enlace CDATA #REQUIRED>
+
+<!-- <!ENTITY entity name SYSTEM "URI/URL"> -->

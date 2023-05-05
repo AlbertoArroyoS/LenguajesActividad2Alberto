@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "DTD_revistas.dtd">
+<revistas>
+    <revista id="P1234" tipo_clase="informática, corazón, coches, investigación y otras" páginas="">
+        <titulo></titulo>
+        <numero ></numero>
+        <indice></indice>
+        <seccion paginas="">
+            <contenido enlace="enlace a la información"></contenido>
+        </seccion>
+    </revista>
+</revistas>
