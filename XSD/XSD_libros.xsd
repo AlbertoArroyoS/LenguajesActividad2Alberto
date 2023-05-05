@@ -5,17 +5,17 @@
             Esquema que marca la estructura de un libro
         </xs:documentation>
     </xs:annotation>
-    <xs:element name="libros">
+    <xs:element name="libro">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="titulo" type="xs:string"/>
-                <xs:element name="capitulos" minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="capitulo" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo_capitulo" type="xs:string"/>
                             <xs:element name="contenido" type="xs:string"/>
                         </xs:sequence>
-                        <xs:attribute name="pagina" type="xs:string" use="required"/>
+                        <xs:attribute name="paginas" type="xs:string" use="required"/>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="indice" type="xs:string"/>
@@ -25,11 +25,9 @@
             <xs:attribute name="tipo_clase" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="informática"/>
-                        <xs:enumeration value="corazón"/>
-                        <xs:enumeration value="coches"/>
-                        <xs:enumeration value="investigación"/>
-                        <xs:enumeration value="otras"/>
+                        <xs:enumeration value="novela"/>
+                        <xs:enumeration value="infantil"/>
+                        <xs:enumeration value="didáctico"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
