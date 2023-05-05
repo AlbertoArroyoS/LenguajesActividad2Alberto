@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <biblioteca>
  <!--  Libros    -->
-    <libro id="L1234" tipo_clase="novela, infantil o didáctico" páginas="">
-        <título></título>
-        <capítulo páginas="">
-            <título> </título>
+    <libros>
+        <libro id="L1234" tipo_clase="novela, infantil o didáctico" páginas="">
+            <título></título>
+            <capítulo páginas="">
+                <título> </título>
+                <contenido enlace="enlace a la información"></contenido>
+            </capítulo>
+            <índice></índice>
+            <sinopsis></sinopsis>
+        </libro>
+    </libros>
+    <!--  Revistas    -->
+    <revistas>
+        <revista id="P1234" tipo_clase="informática, corazón, coches, investigación y otras" páginas="">
+            <título></título>
+            <número ></número>
+            <índice></índice>
+            <seccion páginas="">
+                <contenido enlace="enlace a la información"></contenido>
+            </seccion>
+        </revista>
+    </revistas>
+    <!--  Periodicos    -->
+    <periodicos>
+        <periodico id="R1234" tipo_clase="nacionales o internacionales" fecha_publicación="">
+            <seccion tipo_sección="económica, opinión, deportes, nacional o internacional">
+                <artículo autor=""></artículo>
+            </seccion>
+            <índice></índice>
             <contenido enlace="enlace a la información"></contenido>
-        </capítulo>
-        <índice></índice>
-        <sinopsis></sinopsis>
-    </libro>
- <!--  Revistas    -->
-    <revista id="P1234" tipo_clase="informática, corazón, coches, investigación y otras" páginas="">
-        <título></título>
-        <número ></número>
-        <índice></índice>
-        <seccion páginas="">
-            <contenido enlace="enlace a la información"></contenido>
-        </seccion>
-    </revista>
- <!--  Periodicos    -->
-    <periodico id="R1234" tipo_clase="nacionales o internacionales" fecha_publicación="">
-        <seccion tipo_sección="económica, opinión, deportes, nacional o internacional">
-            <artículo autor=""></artículo>
-        </seccion>
-        <índice></índice>
-        <contenido enlace="enlace a la información"></contenido>
-    </periodico>
-
-
-
-
-
-
-
-
-
+        </periodico>
+    </periodicos>
 </biblioteca>
