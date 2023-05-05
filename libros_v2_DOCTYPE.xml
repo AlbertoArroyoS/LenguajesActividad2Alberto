@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros [
+    <!ELEMENT libros (libro+)>
+    <!ELEMENT libro (titulo,capitulo,indice,sinopsis)>
+
+    <!-- Definimos los atributos del libro -->
+    <!ATTLIST libro id ID #REQUIRED>
+    <!ATTLIST libro tipo_clase (novela | infantil | didáctico) #REQUIRED>
+    <!ATTLIST libro paginas CDATA #REQUIRED>
+
+    <!ELEMENT titulo (#PCDATA)>
+
+    <!ELEMENT capitulo (#PCDATA) >
+    <!ATTLIST capitulo c_paginas CDATA >
+
+    <!ELEMENT titulo_capitulo (#PCDATA)>
+    <!ELEMENT contenido (#PCDATA)>
+    <!ATTLIST contenido enlace CDATA #REQUIRED>
+
+    <!ELEMENT indice (#PCDATA)>
+    <!ELEMENT sinopsis (#PCDATA)>
+]>
+ <!--  Libros    -->
+<libros>
+    <libro id="L1234" tipo_clase="didáctico" paginas="150">
+        <titulo></titulo>
+        <capitulo c_paginas="20">
+            <titulo_capitulo> Nombre capitulo </titulo_capitulo>
+            <contenido enlace="enlace a la información"></contenido>
+        </capitulo>
+        <indice></indice>
+        <sinopsis></sinopsis>
+    </libro>
+</libros>
