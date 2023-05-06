@@ -10,7 +10,7 @@
             <xs:sequence>
                 <xs:element name="titulo" type="xs:string"/>
                  <!-- varios capítulos con el título en su interior-->
-                <xs:element name="capitulo" minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="capitulo" minOccurs="2" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo_capitulo" type="xs:string"/>
