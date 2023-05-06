@@ -5,6 +5,7 @@
             Esquema que marca la estructura de un periodico
         </xs:documentation>
     </xs:annotation>
+    <!-- El nodo raíz se llama periodico-->
     <xs:element name="periodico">
         <xs:complexType>
             <xs:sequence>
@@ -56,7 +57,7 @@
                 </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="fecha_publicacion" type="xs:string" use="required"/> 
+            <xs:attribute name="fecha_publicacion" type="xs:date" use="required"/> 
         </xs:complexType>
     </xs:element>
 </xs:schema>

@@ -5,6 +5,7 @@
             Esquema que marca la estructura de una revista
         </xs:documentation>
     </xs:annotation>
+    <!-- El nodo raíz se llama revista-->
     <xs:element name="revista">
         <xs:complexType>
             <xs:sequence>

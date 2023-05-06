@@ -5,6 +5,7 @@
             Esquema que marca la estructura de un libro
         </xs:documentation>
     </xs:annotation>
+    <!-- El nodo raíz se llama libro-->
     <xs:element name="libro">
         <xs:complexType>
             <xs:sequence>
