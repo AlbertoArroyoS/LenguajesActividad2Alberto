@@ -40,6 +40,7 @@
                 </xs:element>
             </xs:sequence> 
             <xs:attribute name="id" use="required">
+            <!-- Id con restriccion de que empiece por P y luego 4 digitos-->
                 <xs:simpleType>
                 <xs:restriction base="xs:string">
                     <xs:pattern value="P\d{4}"/>
@@ -47,6 +48,7 @@
                 </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="tipo_clase" use="required">
+            <!-- Restriccion de tipo de periodico -->
                 <xs:simpleType>
                 <xs:restriction base="xs:string">
                     <xs:enumeration value="nacional"/>
