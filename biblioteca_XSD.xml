@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <!-- XSD -->
+ <!-- Biblioteca   -->
  <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        	xsi:noNamespaceSchemaLocation= "./XSD/biblioteca.xsd"> 
+        	xsi:noNamespaceSchemaLocation= "./Validaciones/biblioteca.xsd"> 
 
- <!-- <biblioteca>   -->
 	<libros>
-		<libro id="L0001" tipo_clase_l="didáctico" paginas="250" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation= "XSD/XSD_libros.xsd">
+		<libro id="L0001" tipo_clase_l="didáctico" paginas="250">
             <titulo_libro>Validaciones de XML para novatos</titulo_libro>
             <capitulo c_paginas="10" >
                 <titulo_capitulo>Introducción XSD</titulo_capitulo>
@@ -24,8 +23,7 @@
 
 
 	<revistas>
-		<revista id="R0001" tipo_clase_r="informática" paginas="50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation= "XSD/XSD_revistas.xsd">
+		<revista id="R0001" tipo_clase_r="informática" paginas="50">
             <titulo_revista>Revista de informática</titulo_revista>
             <numero >1</numero>
             <indice_revista></indice_revista>
@@ -37,8 +35,7 @@
 	</revistas>
 
 	<periodicos>
-		<periodico id="P1234" tipo_clase_p="nacional" fecha_publicacion="2023-05-05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation= "XSD/XSD_periodicos.xsd">
+		<periodico id="P1234" tipo_clase_p="nacional" fecha_publicacion="2023-05-05">
             <seccion tipo_seccion="deportes">
                 <articulo autor="Alberto Arroyo"></articulo>
             </seccion>

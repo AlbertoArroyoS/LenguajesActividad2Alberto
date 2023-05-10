@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- DTD -->
-<!DOCTYPE biblioteca SYSTEM "./DTD/biblioteca.dtd">
-
+<!DOCTYPE biblioteca SYSTEM "./Validaciones/biblioteca.dtd">
+<!-- Biblioteca   -->
 <biblioteca>
     <libros>
         <libro id="L0001" tipo_clase_l="didáctico" paginas="250" >
@@ -33,7 +33,7 @@
     </revistas> 
 
     <periodicos>
-    
+
         <periodico id="P1234" tipo_clase_p="nacional" fecha_publicacion="2023-05-05">
             <seccion tipo_seccion="deportes">
                 <articulo autor="Alberto Arroyo"></articulo>
