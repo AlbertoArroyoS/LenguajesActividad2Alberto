@@ -6,7 +6,7 @@
         	xsi:noNamespaceSchemaLocation= "./Validaciones/biblioteca.xsd"> 
 
 	<libros>
-		<libro id="L0001" tipo_clase_l="didáctico" paginas="250">
+		<libro id="L0001" tipo_clase_l="didactico" paginas="250">
             <titulo_libro>Validaciones de XML para novatos</titulo_libro>
             <capitulo c_paginas="10" >
                 <titulo_capitulo>Introducción XSD</titulo_capitulo>
@@ -23,7 +23,7 @@
 
 
 	<revistas>
-		<revista id="R0001" tipo_clase_r="informática" paginas="50">
+		<revista id="R0001" tipo_clase_r="informatica" paginas="50">
             <titulo_revista>Revista de informática</titulo_revista>
             <numero >1</numero>
             <indice_revista></indice_revista>

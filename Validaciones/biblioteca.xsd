@@ -48,7 +48,7 @@
                                         <xs:restriction base="xs:string">
                                             <xs:enumeration value="novela"/>
                                             <xs:enumeration value="infantil"/>
-                                            <xs:enumeration value="didáctico"/>
+                                            <xs:enumeration value="didactico"/>
                                         </xs:restriction>
                                     </xs:simpleType>
                                 </xs:attribute>
@@ -96,10 +96,10 @@
                                 <!-- Restriccion de tipo de revista -->
                                     <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:enumeration value="informática"/>
-                                        <xs:enumeration value="corazón"/>
+                                        <xs:enumeration value="informatica"/>
+                                        <xs:enumeration value="corazon"/>
                                         <xs:enumeration value="coches"/>
-                                        <xs:enumeration value="investigación"/>
+                                        <xs:enumeration value="investigacion"/>
                                         <xs:enumeration value="otras"/>
                                     </xs:restriction>
                                     </xs:simpleType>
